@@ -1,0 +1,9 @@
+{
+  "name": "amazon-price-scraping",
+  "description": "Scrape prices from Amazon for specific products and send out alerts.",
+  "author": "david karapetyan",
+  "dependencies": {
+    "typescript": "1.x",
+    "cheerio": "x"
+  }
+}
