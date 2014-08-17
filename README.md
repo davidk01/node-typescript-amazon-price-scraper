@@ -1,4 +1,4 @@
 node-typescript-amazon-price-scraper
 ====================================
 
-Wanted to experiment with Node.js and TypeScript to see if there was a worthwhile synergy between them. Turns out Node.js and TypeScript are totally antithetical
+Wanted to experiment with Node.js and TypeScript to see if there was a worthwhile synergy between them. Turns out Node.js and TypeScript are totally antithetical. If you want to do type safe programming in Node.js with the help of TypeScript then you're barking up the wrong tree. Pretty much all the Node.js libraries and APIs are almost actively trying to get in your way and you are forced to use `any` pretty much everywhere. The stream API is a good example of what I mean. If you try to implement your own `Transform` then then you are forced to use `(chunk: any, encoding: string, done: Function): void` as the signature for `_transform` method completely defeating any type safety. The streams themselves are basically untyped and there is no sensible way to assign them a type because of `void` return type on `_transform` method.
